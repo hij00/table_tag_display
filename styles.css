@@ -1,0 +1,36 @@
+.table_display {
+  display: table;
+  width: 400px;
+  border-collapse: collapse;
+}
+/* display: table => table태그처럼 사용 */
+/* border-collapse: collapse => table, cell의 테두리선을 표시하는 방식 
+collapse는 셀간의 간격을 합쳐서 표현 */
+
+.item {
+  display: table-row;
+  align-items: center;
+}
+/* display: table-row => tr태그처럼 사용 */
+
+.name,
+.bar,
+.num {
+  display: table-cell;
+  height: 40px;
+  vertical-align: middle;
+}
+/* display: table-cell => td태그처럼 사용 */
+
+.name {
+  white-space: nowrap;
+}
+/* white-space: nowrap => 셀 내부의 텍스트가 다음 라인으로 개행되서 수직으로 나오는 것을 방지함 */
+
+thead,
+tbody,
+tr,
+td,
+th {
+  border: 1px solid black;
+}

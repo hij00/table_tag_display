@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="./styles.css"></link>
+</head>
+<body>
+    <section class="table_display">
+        <div class="item">
+            <div class="name">html/css</div>
+            <span class="bar"><progress value="9" max="10"></progress></span>
+            <div class="num">9</div>
+        </div>
+        <div class="item">
+            <div class="name">Javascript</div>
+            <span class="bar"><progress value="7.3" max="10"></progress></span>
+            <div class="num">7.3</div>
+        </div> <div class="item">
+            <div class="name">Java</div>
+            <span class="bar"><progress value="0" max="10"></progress></span>
+            <div class="num">0</div>
+        </div>
+    </section>
+    <br>
+    <br>
+
+
+    <section class="table_tag">
+        <table>
+            <tr><td>이름</td><td>진행과정</td><td>점수</td></tr>
+        </table>
+        <!-- tr 행(가로) / td 열(셀, 한 칸) -->
+
+        <br>
+
+        <table>
+            <thead><th>이름</th><th>진행과정</th><th>점수</th></thead>
+            <tbody><tr><td>html</td><td><progress value="9" max="10"></progress></td><td>9</td></tr></tbody>
+        </table>
+        <!-- thead로 제목 영역, tr태그 상위 / <thead><th></th></thead>로 구성됨 -->
+        <!-- tbody는 표의 본문 영역, <tbody><tr><td></td></tr></tbody>로 구성됨 -->
+
+        <br>
+
+        <table>
+            <tr><td colspan="2">2*1 셀</td></tr>
+            <tr><td>1*1 셀</td><td>1*1 셀</td></tr>
+        </table>
+        <!-- colspan은 td 태그에서 사용, 열을 확장(좌우) -->
+
+        <table>
+            <tr><td rowspan="2">1*2 셀</td><td>1*1 셀</td></tr>
+            <tr><td>1*1 셀</td></tr>
+        </table>
+        <!-- rowspan은 td 태그에서 사용, 행 확장(상하) -->
+
+    </section>
+
+</body>
+</html>
